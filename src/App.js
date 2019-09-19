@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AppToolBar from './components/AppToolBar';
+import MainMap from './components/MainMap';
+import TripInfo from './components/trip-info/TripInfo';
+import Bookings from './components/bookings/Bookings';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -18,15 +21,6 @@ const useStyles = makeStyles(theme => ({
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
-  },
-  cardHeader: {
-    backgroundColor: theme.palette.grey[200],
-  },
-  cardPricing: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'baseline',
-    marginBottom: theme.spacing(2),
   },
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,
@@ -46,8 +40,14 @@ export default function App() {
     <>
       <CssBaseline />
       <AppToolBar />
-      <Container maxWidth='sm' component='main' className={classes.heroContent}>
-        {'Hello From the other side!'}
+      <Container maxWidth='lg' component='main' className={classes.heroContent}>
+        <MainMap />
+      </Container>
+      <Container maxWidth='lg' component='main'>
+        <TripInfo />
+      </Container>
+      <Container maxWidth='lg' component='main' className={classes.heroContent}>
+        <Bookings />
       </Container>
     </>
   );
