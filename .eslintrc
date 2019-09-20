@@ -15,7 +15,10 @@
     "no-param-reassign": "warn",
     "react/jsx-props-no-spreading": "off",
     "react/no-unescaped-entities": "off",
-    "react/style-prop-object": "warn"
+    "react/style-prop-object": "warn",
+    "no-return-await": "warn",
+    "no-debugger": "warn",
+    "react/no-unused-state": "warn"
   },
   "globals": {
     "window": true,

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
-import CaptainInfo from './CaptainInfo';
+import DriverInfo from './DriverInfo';
 import TripTimeLineDetails from './TripTimeLineDetails';
 import TripDetails from './TripDetails';
 
 const useStyles = makeStyles(() => ({
   tripInfoBox: {
-    width: 300,
+    width: 377,
   },
 }));
 
@@ -18,13 +18,13 @@ export default function TripInfo() {
         <Typography variant='h5'>Trip Info</Typography>
       </Box>
       <Box display='flex' flexWrap='wrap' p={1} m={1}>
-        <Box p={1} mx={1} className={classes.tripInfoBox}>
-          <CaptainInfo />
+        <Box px={1} mx={1} className={classes.tripInfoBox}>
+          <DriverInfo />
         </Box>
-        <Box p={1} mx={1} className={classes.tripInfoBox}>
+        <Box px={1} mx={1} className={classes.tripInfoBox}>
           <TripTimeLineDetails />
         </Box>
-        <Box p={1} mx={1} className={classes.tripInfoBox}>
+        <Box px={1} mx={1} className={classes.tripInfoBox}>
           <TripDetails />
         </Box>
       </Box>

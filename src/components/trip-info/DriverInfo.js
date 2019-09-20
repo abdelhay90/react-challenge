@@ -19,29 +19,34 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CaptainInfo() {
+export default function DriverInfo({
+  carModel = 'TOYOTA HiAce - QA 2273',
+  carImageUrl = '/static/images/Toyota-HiAce.jpg',
+  driverName = 'Captain Saboo',
+  driverImageUrl = '/static/images/driver-1.jpg',
+}) {
   const classes = useStyles();
   return (
-    <Box display='flex' flexWrap='wrap' p={1} m={1}>
-      <Box p={1} mx={1} alignItems='center'>
+    <Box display='flex' flexWrap='wrap' m={1}>
+      <Box mx={1} alignItems='center'>
         <Grid container justify='flex-start' alignItems='center'>
           <Avatar
-            alt='Remy Sharp'
-            src='/static/images/Toyota-HiAce.jpg'
+            alt={carModel}
+            src={carImageUrl}
             className={`${classes.bigAvatar} ${classes.car}`}
           />
           <Avatar
-            alt='Remy Sharp'
-            src='/static/images/driver-1.jpg'
+            alt={driverName}
+            src={driverImageUrl}
             className={`${classes.bigAvatar} ${classes.driver}`}
           />
         </Grid>
       </Box>
-      <Box p={1} mx={1} xs={6}>
+      <Box px={1} mx={1}>
         <Typography variant='h6' gutterBottom>
-          Captain Sapoo
+          {driverName}
         </Typography>
-        TOYOTA HiAce - QA 2273
+        {carModel}
       </Box>
     </Box>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import { AppBar, makeStyles, Toolbar } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -21,20 +20,18 @@ export default function AppToolBar() {
   const classes = useStyles();
   return (
     <AppBar
-      position='static'
+      position='fixed'
       color='default'
       elevation={0}
       className={classes.appBar}
     >
       <Toolbar className={classes.toolbar}>
-        <Typography
-          variant='h6'
-          color='inherit'
-          noWrap
-          className={classes.toolbarTitle}
-        >
-          SWVL
-        </Typography>
+        <img
+          alt='logo'
+          src='/static/images/swvl-new-logo.png'
+          width='90'
+          height='36'
+        />
       </Toolbar>
     </AppBar>
   );
