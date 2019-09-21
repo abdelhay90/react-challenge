@@ -1,10 +1,11 @@
 import React from 'react';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import { Container, CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import AppToolBar from './components/core/AppToolBar';
-import MainMap from './components/main-map/MainMap';
-import TripInfo from './components/trip-info/TripInfo';
-import Bookings from './components/bookings/Bookings';
+import AppToolBar from './core/AppToolBar';
+import MainMap from './main-map/MainMap';
+import TripInfo from './trip-info/TripInfo';
+import Bookings from './bookings/Bookings';
 
 const useStyles = makeStyles(theme => ({
   '@global': {

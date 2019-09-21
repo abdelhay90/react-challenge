@@ -53,12 +53,9 @@ export const stops = [
 
 export const trip = {
   id: '123456789',
-
   distance: 47,
-
   rateFare: 25,
-
   driverInfo: {},
-
   path: stops.slice(0),
+  passengers: [],
 };

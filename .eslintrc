@@ -18,7 +18,7 @@
     "react/style-prop-object": "warn",
     "no-return-await": "warn",
     "no-debugger": "warn",
-    "react/no-unused-state": "warn"
+    "react/no-unused-state": "warn",
   },
   "globals": {
     "window": true,

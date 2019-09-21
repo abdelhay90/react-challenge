@@ -1,6 +1,11 @@
-import ReactMapboxGL from 'react-mapbox-gl';
+import React from 'react';
+import { inject, observer } from 'mobx-react';
+import MainMap from '../components/main-map/MainMap';
 
-export default ReactMapboxGL({
-  accessToken:
-    'pk.eyJ1IjoiYWhtZWQtYWJkZWxoYXkiLCJhIjoiY2swb2lkeGcyMGE1dDNlcnV3bzYyeXBqYSJ9.n0kF9SCChITXNQispwGnYQ',
-});
+const MapContainer = inject('trip')(
+  observer(trip => {
+    return <MainMap path={trip.path} />;
+  }),
+);
+
+export default MapContainer;

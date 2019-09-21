@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
+import ReactMapGL from 'react-map-gl';
 import { Button, Box } from '@material-ui/core';
-import { Feature, Layer } from 'react-mapbox-gl';
-import MapContainer from '../../containers/MapContainer';
 import { stops } from '../../lib/mock';
 import {
   addGeoJSONLayer,
@@ -13,10 +12,13 @@ import {
 import {
   ANIMATION_STEPS,
   DEFAULT_LAYER_CIRCLE_PAINT,
+  DEFAULT_LAYER_LINE_PAINT,
+  DEFAULT_LAYER_SYMBOL_BUS_PAINT,
   GEOMETRY_POINT_TYPE,
   LAYER_CIRCLE_TYPE,
   LAYER_LINE_TYPE,
   LAYER_SYMBOL_TYPE,
+  MAP_TOKEN,
 } from '../../lib/constants';
 
 let frameId = null;
@@ -27,12 +29,36 @@ export default class MainMap extends Component {
     this.state = {
       map: undefined,
       mapLoaded: false,
+      tripStarted: false,
+      viewport: {
+        width: '100%',
+        height: 400,
+        latitude: 37.7577,
+        longitude: -122.4376,
+        zoom: 8,
+      },
     };
   }
 
   mapLoaded = map => {
+    const route = createFeatureCollection(
+      [{ name: 'route1', coordinates: stops.map(item => item.coordinates) }],
+      'LineString',
+    );
     const routeStops = createFeatureCollection(stops, 'Point');
     const busCollection = createFeatureCollection([stops[0]], 'Point');
+
+    addGeoJSONLayer({
+      map,
+      sourceOptions: { name: 'route', data: route },
+      layerOptions: {
+        id: 'route',
+        source: 'route',
+        type: LAYER_LINE_TYPE,
+        layout: { visibility: 'visible' },
+        paint: DEFAULT_LAYER_LINE_PAINT,
+      },
+    });
 
     addGeoJSONLayer({
       map,
@@ -53,13 +79,7 @@ export default class MainMap extends Component {
         id: 'bus',
         source: 'bus',
         type: LAYER_SYMBOL_TYPE,
-        layout: {
-          'icon-image': 'airport-15',
-          'icon-rotate': ['get', 'bearing'],
-          'icon-rotation-alignment': 'map',
-          'icon-allow-overlap': true,
-          'icon-ignore-placement': true,
-        },
+        layout: DEFAULT_LAYER_SYMBOL_BUS_PAINT,
       },
     });
   };
@@ -68,8 +88,11 @@ export default class MainMap extends Component {
     if (frameId) {
       window.cancelAnimationFrame(frameId);
       frameId = null;
+      this.setState({ tripStarted: false });
       return;
     }
+    this.setState({ tripStarted: true });
+
     const locations = stops.map(item =>
       createFeature(item, GEOMETRY_POINT_TYPE, item.coordinates),
     );
@@ -113,38 +136,36 @@ export default class MainMap extends Component {
     });
   };
 
+  onViewportChange = () => {
+    // this.setState({ viewport: vp });
+  };
+
   render() {
     const line = stops.map(item => item.coordinates);
-    const { mapLoaded } = this.state;
+    const { mapLoaded, viewport, tripStarted } = this.state;
     return (
       <div>
         <Box mb={1}>
           <Button
             variant='contained'
-            color='secondary'
+            color={!tripStarted ? 'secondary' : 'primary'}
             disabled={!mapLoaded}
             onClick={this.startTrip}
           >
-            Start Trip
+            {!tripStarted ? 'Start Trip' : 'Stop Trip'}
           </Button>
         </Box>
         <Box my={1}>
-          <MapContainer
-            style='mapbox://styles/mapbox/streets-v8'
-            containerStyle={{
-              height: '35vh',
-              width: '100%',
+          <ReactMapGL
+            mapboxApiAccessToken={MAP_TOKEN}
+            {...viewport}
+            onViewportChange={this.onViewportChange}
+            onLoad={e => {
+              this.setState({ map: e.target, mapLoaded: true });
+              this.mapLoaded(e.target);
+              fitBounds(e.target, line);
             }}
-            onStyleLoad={map => {
-              this.setState({ map, mapLoaded: true });
-              this.mapLoaded(map);
-              fitBounds(map, line);
-            }}
-          >
-            <Layer type={LAYER_LINE_TYPE}>
-              <Feature coordinates={line} />
-            </Layer>
-          </MapContainer>
+          />
         </Box>
       </div>
     );

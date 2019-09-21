@@ -1,16 +1,16 @@
-import { observable, action } from 'mobx';
+import { observable, action, computed } from 'mobx';
 import Passenger from './Passenger';
 
 export default class Trip {
   id;
 
-  distance;
+  @observable distance;
 
-  rateFare;
+  @observable rateFare;
 
-  driverInfo;
+  @observable driverInfo;
 
-  path;
+  @observable path;
 
   @observable passengers = [];
 
@@ -21,6 +21,19 @@ export default class Trip {
     this.rateFare = rateFare;
     this.driverInfo = driverInfo;
     this.path = path;
+  }
+
+  @computed
+  get route() {
+    return {
+      name:
+        this.path.length !== 0
+          ? `${this.path[0].stationName} - ${this.path[this.path.length - 1].stationName}`
+          : 0,
+      route: this.path.map(item => item.coordinates),
+      routeStops: this.path,
+      startPoint: this.path.length !== 0 ? this.path[0] : '',
+    };
   }
 
   @action.bound

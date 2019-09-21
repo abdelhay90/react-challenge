@@ -1,3 +1,5 @@
+export const MAP_TOKEN =
+  'pk.eyJ1IjoiYWhtZWQtYWJkZWxoYXkiLCJhIjoiY2swb2lkeGcyMGE1dDNlcnV3bzYyeXBqYSJ9.n0kF9SCChITXNQispwGnYQ';
 export const FEATURE_COLLECTION_TYPE = 'FeatureCollection';
 export const FEATURE_TYPE = 'Feature';
 export const GEOMETRY_POINT_TYPE = 'Point';
@@ -11,6 +13,19 @@ export const DEFAULT_LAYER_CIRCLE_PAINT = {
   'circle-stroke-width': 1,
   'circle-stroke-color': '#fff',
   'circle-stroke-opacity': 1,
+};
+
+export const DEFAULT_LAYER_LINE_PAINT = {
+  'line-width': 2,
+  'line-color': '#007cbf',
+};
+
+export const DEFAULT_LAYER_SYMBOL_BUS_PAINT = {
+  'icon-image': 'airport-15',
+  'icon-rotate': ['get', 'bearing'],
+  'icon-rotation-alignment': 'map',
+  'icon-allow-overlap': true,
+  'icon-ignore-placement': true,
 };
 
 // 30.1 seconds, the .1 is to allow a buffer for the next set of cords to load
