@@ -20,9 +20,9 @@ const useStyles = makeStyles({
 });
 
 export default function DriverInfo({
-  carModel = 'TOYOTA HiAce - QA 2273',
+  carModel = '',
   carImageUrl = '/static/images/Toyota-HiAce.jpg',
-  driverName = 'Captain Saboo',
+  driverName = '',
   driverImageUrl = '/static/images/driver-1.jpg',
 }) {
   const classes = useStyles();

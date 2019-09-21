@@ -51,11 +51,103 @@ export const stops = [
   },
 ];
 
+export const passengers = [
+  {
+    id: '5d865ee507bfe196bac94ff3',
+    name: 'Bailey Walls',
+    status: 'completed',
+    paymentMethod: 'cash',
+    imageUrl: '/static/images/leo.jpg',
+  },
+  {
+    id: '5d865ee543724f1184914907',
+    name: 'Angie Rice',
+    status: 'missed',
+    paymentMethod: 'cash',
+    imageUrl: '/static/images/full-face-1.jpg',
+  },
+  {
+    id: '5d865ee54ec4f96a85fa3dbc',
+    name: 'Cecilia Trevino',
+    status: 'canceled',
+    paymentMethod: 'credit',
+    imageUrl: 'static/images/full-face-2.jpg',
+  },
+  {
+    id: '5d865ee5ad0a247f264dd75f',
+    name: 'Coffey Fleming',
+    status: 'completed',
+    paymentMethod: 'cash',
+    imageUrl: 'static/images/full-face-2.jpg',
+  },
+  {
+    id: '5d865ee5ecfd4d136af665ba',
+    name: 'Stuart Orr',
+    status: 'canceled',
+    paymentMethod: 'cash',
+    imageUrl: '/static/images/leo.jpg',
+  },
+  {
+    id: '5d865ee5b3da2fb19e62a897',
+    name: 'Vickie Beard',
+    status: 'completed',
+    paymentMethod: 'cash',
+    imageUrl: '/static/images/full-face-1.jpg',
+  },
+  {
+    id: '5d865ee525b0567a26b1c2f3',
+    name: 'Sandra Blackburn',
+    status: 'completed',
+    paymentMethod: 'cash',
+    imageUrl: '/static/images/leo.jpg',
+  },
+  {
+    id: '5d865ee5f18d6587c1cb9ed0',
+    name: 'Tia Oneal',
+    status: 'canceled',
+    paymentMethod: 'credit',
+    imageUrl: '/static/images/leo.jpg',
+  },
+  {
+    id: '5d865ee527d6024df9300d92',
+    name: 'Marylou Carr',
+    status: 'missed',
+    paymentMethod: 'credit',
+    imageUrl: 'static/images/full-face-2.jpg',
+  },
+  {
+    id: '5d865ee51049173f6c386500',
+    name: 'Rowe Rocha',
+    status: 'missed',
+    paymentMethod: 'credit',
+    imageUrl: '/static/images/leo.jpg',
+  },
+  {
+    id: '5d865ee5d0d97ea49d4e5124',
+    name: 'Mcconnell Jefferson',
+    status: 'completed',
+    paymentMethod: 'credit',
+    imageUrl: '/static/images/full-face-1.jpg',
+  },
+  {
+    id: '5d865ee580c33a45ed14c2ed',
+    name: 'Cook Best',
+    status: 'canceled',
+    paymentMethod: 'credit',
+    imageUrl: '/static/images/full-face-1.jpg',
+  },
+];
+
 export const trip = {
   id: '123456789',
   distance: 47,
   rateFare: 25,
-  driverInfo: {},
+  driverInfo: {
+    carModel: ' TOYOTA HiAce 2019',
+    carImageUrl: '/static/images/Toyota-HiAce.jpg',
+    driverName: 'Ahmed Abdelhay',
+    driverImageUrl: '/static/images/driver-1.jpg',
+  },
   path: stops.slice(0),
-  passengers: [],
+  passengers: passengers.slice(0),
 };

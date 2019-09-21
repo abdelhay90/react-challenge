@@ -10,10 +10,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function TripTimeLineDetails({
-  start = 'Triumph Square',
-  end = 'Mohandeseen',
-}) {
+export default function TripTimeLineDetails({ start, end }) {
   const classes = useStyles();
   return (
     <Box className={classes.gradientBorder} m={1}>

@@ -7,13 +7,16 @@ export default class Passenger {
 
   paymentMethod;
 
+  imageUrl;
+
   @observable status;
 
-  constructor({ id, name, status, paymentMethod }, list) {
+  constructor({ id, name, status, paymentMethod, imageUrl }, list) {
     this.id = id;
     this.name = name;
     this.status = status;
     this.paymentMethod = paymentMethod;
+    this.imageUrl = imageUrl;
     this.list = list;
   }
 

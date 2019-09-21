@@ -14,9 +14,9 @@ export default class Trip {
 
   @observable passengers = [];
 
-  constructor({ id, passengers, distance, rateFare, driverInfo, path }) {
+  constructor({ id, passengers = [], distance, rateFare, driverInfo, path }) {
     this.id = id;
-    this.passengers = passengers;
+    this.passengers = passengers.map(item => new Passenger({ ...item }, this));
     this.distance = distance;
     this.rateFare = rateFare;
     this.driverInfo = driverInfo;
@@ -33,16 +33,17 @@ export default class Trip {
       route: this.path.map(item => item.coordinates),
       routeStops: this.path,
       startPoint: this.path.length !== 0 ? this.path[0] : '',
+      endPoint: this.path.length !== 0 ? this.path[this.path.length - 1] : '',
     };
   }
 
   @action.bound
   addPassenger(passenger) {
-    this.items.push(new Passenger(passenger, this));
+    this.passengers.push(new Passenger({ ...passenger }, this));
   }
 
   @action.bound
   removePassenger(item) {
-    this.items = this.items.filter(i => i !== item);
+    this.passengers = this.passengers.filter(i => i !== item);
   }
 }

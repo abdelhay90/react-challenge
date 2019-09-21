@@ -1,38 +1,51 @@
 import localforage from 'localforage';
+import { trip, passengers } from './mock';
 
 window.localforage = localforage;
 
-const getAll = async () => {
+const getAllTrips = async () => {
   const items = await localforage.getItem('trips');
-  if (!items) await localforage.setItem('trips', []);
+  if (!items) await localforage.setItem('trips', [trip]);
+  return items || [];
+};
+
+const getAllPassengers = async () => {
+  const items = await localforage.getItem('passengers');
+  if (!items) await localforage.setItem('passengers', [...passengers]);
   return items || [];
 };
 
 export default {
-  async add(item) {
-    const items = await getAll();
+  async addTrip(item) {
+    const items = await getAllTrips();
     const newItem = { ...item, id: Date.now() };
-    localforage.setItem('trips', [...items, newItem]);
+    await localforage.setItem('trips', [...items, newItem]);
     return newItem;
   },
 
-  async getAll() {
-    return await getAll();
+  async getAllTrips() {
+    const trips = await getAllTrips();
+    return trips;
   },
 
-  async delete({ id }) {
-    const items = await getAll();
-    localforage.setItem('trips', items.filter(item => item.id !== id));
+  async deleteTrip({ id }) {
+    const items = await getAllTrips();
+    await localforage.setItem('trips', items.filter(item => item.id !== id));
   },
 
-  async update(updatedItem) {
-    const items = await getAll();
-    localforage.setItem(
+  async updateTrip(updatedItem) {
+    const items = await getAllTrips();
+    await localforage.setItem(
       'trips',
       items.map(item => {
         if (item.id === updatedItem.id) return { ...item, ...updatedItem };
         return item;
       }),
     );
+  },
+
+  async getAllPassengers() {
+    const newPassengers = await getAllPassengers();
+    return newPassengers;
   },
 };

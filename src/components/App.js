@@ -3,9 +3,10 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { Container, CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AppToolBar from './core/AppToolBar';
-import MainMap from './main-map/MainMap';
-import TripInfo from './trip-info/TripInfo';
+// import MainMap from './main-map/MainMap';
+// import TripInfo from './trip-info/TripInfo';
 import Bookings from './bookings/Bookings';
+import { MainMapContainer, TripInfoContainer } from '../containers';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -41,14 +42,14 @@ export default function App() {
         component='main'
         className={`${classes.mainContainer} ${classes.mapContainer}`}
       >
-        <MainMap />
+        <MainMapContainer />
       </Container>
       <Container
         maxWidth='lg'
         component='main'
         className={classes.mainContainer}
       >
-        <TripInfo />
+        <TripInfoContainer />
       </Container>
       <Container
         maxWidth='lg'
