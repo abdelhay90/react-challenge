@@ -30,3 +30,23 @@ export const DEFAULT_LAYER_SYMBOL_BUS_PAINT = {
 
 // 30.1 seconds, the .1 is to allow a buffer for the next set of cords to load
 export const ANIMATION_STEPS = 30100;
+
+export const TRIP_STATUS = {
+  STARTED: 'STARTED',
+  NOT_STARTED: 'NOT_STARTED',
+  FINISHED: 'FINISHED',
+  IN_PROGRESS: 'IN_PROGRESS',
+};
+
+export const PAYMENT_METHOD = {
+  CASH: 'CASH',
+  CREDIT: 'CREDIT',
+};
+
+export const PASSENGER_STATUS = {
+  WAITING: 'WAITING',
+  CHECKED_IN: 'CHECKED_IN',
+  MISSED: 'MISSED',
+  CANCELLED: 'CANCELLED',
+  COMPLETED: 'COMPLETED',
+};

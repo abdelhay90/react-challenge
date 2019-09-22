@@ -1,5 +1,6 @@
 import { observable, action, computed } from 'mobx';
 import Passenger from './Passenger';
+import { TRIP_STATUS } from '../lib/constants';
 
 export default class Trip {
   id;
@@ -14,13 +15,27 @@ export default class Trip {
 
   @observable passengers = [];
 
-  constructor({ id, passengers = [], distance, rateFare, driverInfo, path }) {
+  @observable tripStatus;
+
+  @observable currentStop;
+
+  constructor({
+    id,
+    passengers = [],
+    distance,
+    rateFare,
+    driverInfo,
+    path,
+    tripStatus = TRIP_STATUS.NOT_STARTED,
+  }) {
     this.id = id;
     this.passengers = passengers.map(item => new Passenger({ ...item }, this));
     this.distance = distance;
     this.rateFare = rateFare;
     this.driverInfo = driverInfo;
     this.path = path;
+    this.currentStop = this.path.length > 0 ? this.path[0] : null;
+    this.tripStatus = tripStatus;
   }
 
   @computed
@@ -34,16 +49,33 @@ export default class Trip {
       routeStops: this.path,
       startPoint: this.path.length !== 0 ? this.path[0] : '',
       endPoint: this.path.length !== 0 ? this.path[this.path.length - 1] : '',
+      currentStop: this.currentStop,
     };
+  }
+
+  @computed
+  get isTripMaxCapacity() {
+    return this.passengers.length >= 12;
   }
 
   @action.bound
   addPassenger(passenger) {
-    this.passengers.push(new Passenger({ ...passenger }, this));
+    if (this.passengers.length < 12)
+      this.passengers.push(new Passenger({ ...passenger }, this));
   }
 
   @action.bound
   removePassenger(item) {
     this.passengers = this.passengers.filter(i => i !== item);
+  }
+
+  @action.bound
+  startTrip() {
+    this.tripStatus = TRIP_STATUS.STARTED;
+  }
+
+  @action.bound
+  stopTrip() {
+    this.tripStatus = TRIP_STATUS.FINISHED;
   }
 }

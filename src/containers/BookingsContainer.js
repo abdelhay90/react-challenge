@@ -4,7 +4,7 @@ import Bookings from '../components/bookings/Bookings';
 
 const BookingsContainer = inject('trip')(
   observer(({ trip }) => {
-    return <Bookings passenger={trip.passengers} />;
+    return <Bookings passengers={trip.passengers} />;
   }),
 );
 

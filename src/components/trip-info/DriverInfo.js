@@ -24,6 +24,7 @@ export default function DriverInfo({
   carImageUrl = '/static/images/Toyota-HiAce.jpg',
   driverName = '',
   driverImageUrl = '/static/images/driver-1.jpg',
+  plateNumber = '',
 }) {
   const classes = useStyles();
   return (
@@ -46,7 +47,7 @@ export default function DriverInfo({
         <Typography variant='h6' gutterBottom>
           {driverName}
         </Typography>
-        {carModel}
+        {`${carModel} - ${plateNumber}`}
       </Box>
     </Box>
   );

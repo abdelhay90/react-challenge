@@ -3,6 +3,10 @@ import Box from '@material-ui/core/Box';
 import { Avatar, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
+  passenger: {
+    minWidth: 340,
+    maxWidth: 340,
+  },
   bigAvatar: {
     margin: 1,
     width: 70,
@@ -12,21 +16,33 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Passenger() {
+export default function Passenger({
+  id,
+  name,
+  status,
+  paymentMethod,
+  imageUrl,
+}) {
   const classes = useStyles();
   return (
-    <Box display='flex' flexWrap='wrap' p={1} mx={1}>
+    <Box
+      id={id}
+      display='flex'
+      flexWrap='wrap'
+      p={1}
+      mx={1}
+      className={classes.passenger}
+    >
       <Box p={1} mx={1} alignItems='center'>
-        <Avatar
-          alt='Remy Sharp'
-          src='/static/images/full-face-1.jpg'
-          className={classes.bigAvatar}
-        />
+        <Avatar alt={name} src={imageUrl} className={classes.bigAvatar}>
+          {imageUrl === '' ? name[0] : ''}
+        </Avatar>
       </Box>
       <Box p={1} mx={1} xs={6}>
         <Typography variant='h6' gutterBottom>
-          Monica Cupido
+          {name}
         </Typography>
+        {`${status} - ${paymentMethod}`}
       </Box>
     </Box>
   );

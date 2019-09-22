@@ -1,12 +1,12 @@
 import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { Container, CssBaseline } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Container, CssBaseline, makeStyles } from '@material-ui/core';
 import AppToolBar from './core/AppToolBar';
-// import MainMap from './main-map/MainMap';
-// import TripInfo from './trip-info/TripInfo';
-import Bookings from './bookings/Bookings';
-import { MainMapContainer, TripInfoContainer } from '../containers';
+import {
+  MainMapContainer,
+  TripInfoContainer,
+  BookingsContainer,
+} from '../containers';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -56,7 +56,7 @@ export default function App() {
         component='main'
         className={classes.mainContainer}
       >
-        <Bookings />
+        <BookingsContainer />
       </Container>
     </>
   );
