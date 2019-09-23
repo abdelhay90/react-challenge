@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build Status](https://travis-ci.com/abdelhay90/react-challenge.svg?token=u243kVU7psJjfYSkHAJK&branch=master)](https://travis-ci.com/abdelhay90/react-challenge)
 
 ## Available Scripts
 
