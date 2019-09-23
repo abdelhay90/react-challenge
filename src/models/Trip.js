@@ -1,6 +1,11 @@
 import { observable, action, computed } from 'mobx';
+import groupBy from 'lodash/groupBy';
 import Passenger from './Passenger';
-import { TRIP_STATUS } from '../lib/constants';
+import {
+  PASSENGER_STATUS,
+  PASSENGERS_MAX_CAPACITY,
+  TRIP_STATUS,
+} from '../lib/constants';
 
 export default class Trip {
   id;
@@ -55,7 +60,58 @@ export default class Trip {
 
   @computed
   get isTripMaxCapacity() {
-    return this.passengers.length >= 12;
+    return this.passengers.length >= PASSENGERS_MAX_CAPACITY;
+  }
+
+  @computed
+  get passengersStats() {
+    let allGroups = Object.keys(PASSENGER_STATUS).reduce(
+      (accum, value) => ({ ...accum, [value]: [] }),
+      {},
+    );
+    const calculatedGroups = groupBy(this.passengers, 'status');
+    allGroups = { ...allGroups, ...calculatedGroups };
+    return Object.keys(allGroups).map(key => ({
+      x: key,
+      y: allGroups[key].length,
+    }));
+  }
+
+  getStationMap() {
+    return this.path.reduce(
+      (accum, value) => ({ ...accum, [value.stationId]: [] }),
+      {},
+    );
+  }
+
+  combineStationStats(allStations, calculated) {
+    const newStatsMap = { ...allStations, ...calculated };
+    return Object.keys(newStatsMap).map(key => ({
+      x: this.path.filter(item => item.stationId === key)[0].stationName,
+      y: newStatsMap[key].length,
+    }));
+  }
+
+  @computed
+  get stationPickupStats() {
+    const allStations = this.getStationMap();
+    const passengers = this.passengers.filter(
+      passenger =>
+        passenger.status !== PASSENGER_STATUS.MISSED &&
+        passenger.status !== PASSENGER_STATUS.CANCELLED,
+    );
+    const stationGroups = groupBy(passengers, 'pickupStationId');
+    return this.combineStationStats(allStations, stationGroups);
+  }
+
+  @computed
+  get stationCheckoutStats() {
+    const allStations = this.getStationMap();
+    const passengers = this.passengers.filter(
+      passenger => passenger.status === PASSENGER_STATUS.COMPLETED,
+    );
+    const stationGroups = groupBy(passengers, 'checkoutStationId');
+    return this.combineStationStats(allStations, stationGroups);
   }
 
   @action.bound

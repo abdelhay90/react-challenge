@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main App Loading should match snapshot 1`] = `
+<div>
+  <div
+    className="MuiBox-root MuiBox-root-25"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary Mui-disabled Mui-disabled"
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Start Trip
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-46"
+  >
+    <div
+      style={
+        Object {
+          "cursor": "grab",
+          "height": 400,
+          "position": "relative",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className=""
+          style={
+            Object {
+              "height": "100%",
+              "overflow": "hidden",
+              "position": "absolute",
+              "visibility": "inherit",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          style={
+            Object {
+              "height": 0,
+              "overflow": "visible",
+              "width": 0,
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

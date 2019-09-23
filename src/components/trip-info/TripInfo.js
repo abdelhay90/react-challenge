@@ -19,12 +19,7 @@ export default function TripInfo({ driverInfo, route, distance, rateFare }) {
       </Box>
       <Box display='flex' flexWrap='wrap' p={1} m={1}>
         <Box px={1} mx={1} className={classes.tripInfoBox}>
-          <DriverInfo
-            driverName={driverInfo.driverName}
-            carModel={driverInfo.carModel}
-            driverImageUrl={driverInfo.driverImageUrl}
-            carImageUrl={driverInfo.carImageUrl}
-          />
+          <DriverInfo {...driverInfo} />
         </Box>
         <Box px={1} mx={1} className={classes.tripInfoBox}>
           <TripTimeLineDetails

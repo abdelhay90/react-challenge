@@ -36,12 +36,14 @@ const availablePaymentMethod = Object.keys(PAYMENT_METHOD).map(item => ({
   value: item,
 }));
 
-const PassengerForm = inject('trip')(({ trip }) => {
+const PassengerForm = inject('trip')(({ trip, onPassengerAdded }) => {
   const classes = useStyles();
   const [values, setValues] = React.useState({
-    customerName: '',
+    name: '',
     mobileNumber: '',
     paymentMethod: 'CASH',
+    pickupStationId: '',
+    checkoutStationId: '',
   });
   const handleChange = name => evt => {
     setValues({ ...values, [name]: evt.target.value });
@@ -54,11 +56,14 @@ const PassengerForm = inject('trip')(({ trip }) => {
       name: '',
       mobileNumber: '',
       paymentMethod: 'CASH',
+      pickupStationId: '',
+      checkoutStationId: '',
     });
+    onPassengerAdded();
   };
   return (
     <div className={classes.paper}>
-      <form className={classes.form} noValidate>
+      <form className={classes.form} onSubmit={handleSubmit}>
         <Grid container spacing={2}>
           {/* customer name */}
           <Grid item xs={12}>
@@ -66,7 +71,7 @@ const PassengerForm = inject('trip')(({ trip }) => {
               autoComplete='cname'
               name='name'
               variant='outlined'
-              required
+              required={values.name === ''}
               fullWidth
               id='name'
               label='Customer Name'
@@ -80,13 +85,64 @@ const PassengerForm = inject('trip')(({ trip }) => {
               autoComplete='mobileNumber'
               name='mobileNumber'
               variant='outlined'
-              required
+              required={values.mobileNumber === ''}
               fullWidth
               id='mobileNumber'
               label='Mobile Number'
-              autoFocus
               onChange={handleChange('mobileNumber')}
             />
+          </Grid>
+
+          {/* pickup Station */}
+          <Grid item xs={12}>
+            <TextField
+              id='outlined-select-pickup-station'
+              select
+              label='Select'
+              value={values.pickupStationId}
+              onChange={handleChange('pickupStationId')}
+              SelectProps={{
+                MenuProps: {
+                  className: classes.menu,
+                },
+              }}
+              helperText='Please select pick up station'
+              variant='outlined'
+              name='pickupStationId'
+              fullWidth
+            >
+              {trip.path.map(option => (
+                <MenuItem key={option.stationId} value={option.stationId}>
+                  {option.stationName}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+
+          {/* checkout Station */}
+          <Grid item xs={12}>
+            <TextField
+              id='outlined-select-checkout-station'
+              select
+              label='Select'
+              value={values.checkoutStationId}
+              onChange={handleChange('checkoutStationId')}
+              SelectProps={{
+                MenuProps: {
+                  className: classes.menu,
+                },
+              }}
+              helperText='Please select checkout station'
+              variant='outlined'
+              name='checkoutStationId'
+              fullWidth
+            >
+              {trip.path.map(option => (
+                <MenuItem key={option.stationId} value={option.stationId}>
+                  {option.stationName}
+                </MenuItem>
+              ))}
+            </TextField>
           </Grid>
 
           {/* payment method */}
@@ -105,6 +161,7 @@ const PassengerForm = inject('trip')(({ trip }) => {
               helperText='Please select payment method'
               variant='outlined'
               name='paymentMethod'
+              fullWidth
             >
               {availablePaymentMethod.map(option => (
                 <MenuItem key={option.value} value={option.value}>
@@ -121,7 +178,6 @@ const PassengerForm = inject('trip')(({ trip }) => {
           variant='contained'
           color='primary'
           className={classes.submit}
-          onClick={handleSubmit}
         >
           Add Booking
         </Button>

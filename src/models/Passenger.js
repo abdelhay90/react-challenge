@@ -11,26 +11,30 @@ export default class Passenger {
 
   imageUrl;
 
+  pickupStationId;
+
+  checkoutStationId;
+
   @observable status;
 
-  constructor(
-    {
-      id = uniqueId(),
-      name,
-      status = PASSENGER_STATUS.WAITING,
-      paymentMethod,
-      mobileNumber,
-      imageUrl = '',
-    },
-    list,
-  ) {
+  constructor({
+    id = uniqueId(),
+    name,
+    status = PASSENGER_STATUS.WAITING,
+    paymentMethod,
+    mobileNumber,
+    imageUrl = '',
+    pickupStationId,
+    checkoutStationId,
+  }) {
     this.id = id;
     this.name = name;
     this.status = status;
     this.paymentMethod = paymentMethod;
     this.imageUrl = imageUrl;
     this.mobileNumber = mobileNumber;
-    this.list = list;
+    this.pickupStationId = pickupStationId;
+    this.checkoutStationId = checkoutStationId;
   }
 
   @action.bound

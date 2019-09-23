@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main App Loading should match snapshot 1`] = `
+Array [
+  <div
+    className="MuiBox-root MuiBox-root-164"
+  >
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      Trip Info
+    </h5>
+  </div>,
+  <div
+    className="MuiBox-root MuiBox-root-195"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-196 makeStyles-tripInfoBox-162"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-200"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-201"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+          >
+            <div
+              className="MuiAvatar-root makeStyles-bigAvatar-197 makeStyles-car-199"
+            >
+              <img
+                alt=" TOYOTA HiAce 2019"
+                className="MuiAvatar-img"
+                src="/static/images/Toyota-HiAce.jpg"
+              />
+            </div>
+            <div
+              className="MuiAvatar-root makeStyles-bigAvatar-197 makeStyles-driver-198"
+            >
+              <img
+                alt="Ahmed Abdelhay"
+                className="MuiAvatar-img"
+                src="/static/images/driver-1.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-308"
+        >
+          <h6
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Ahmed Abdelhay
+          </h6>
+           TOYOTA HiAce 2019 - QA 2378
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-309 makeStyles-tripInfoBox-162"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-311 makeStyles-gradientBorder-310"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+        >
+          Talaat Harb Axis
+        </h6>
+        <h6
+          className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+        >
+          ElThawra St.
+        </h6>
+      </div>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-312 makeStyles-tripInfoBox-162"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-313"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-h6"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <defs>
+              <path
+                d="M0 0h24v24H0V0z"
+                id="a"
+              />
+            </defs>
+            <path
+              d="M19.5 9.5c-1.03 0-1.9.62-2.29 1.5h-2.92c-.39-.88-1.26-1.5-2.29-1.5s-1.9.62-2.29 1.5H6.79c-.39-.88-1.26-1.5-2.29-1.5C3.12 9.5 2 10.62 2 12s1.12 2.5 2.5 2.5c1.03 0 1.9-.62 2.29-1.5h2.92c.39.88 1.26 1.5 2.29 1.5s1.9-.62 2.29-1.5h2.92c.39.88 1.26 1.5 2.29 1.5 1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5z"
+            />
+          </svg>
+           
+          <span>
+            Trip Distance 47 KM
+          </span>
+        </h6>
+        <h6
+          className="MuiTypography-root MuiTypography-h6"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+            />
+          </svg>
+           
+          <span>
+            Trip Base Fare $25
+          </span>
+        </h6>
+      </div>
+    </div>
+  </div>,
+]
+`;

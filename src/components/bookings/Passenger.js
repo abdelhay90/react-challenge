@@ -9,8 +9,8 @@ const useStyles = makeStyles({
   },
   bigAvatar: {
     margin: 1,
-    width: 70,
-    height: 70,
+    width: 60,
+    height: 60,
     border: '1px solid rgba(88,88,88,0.1)',
     'box-shadow': '2px 0px rgba(88,88,88,0.3)',
   },

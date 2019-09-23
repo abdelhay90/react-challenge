@@ -58,6 +58,8 @@ export const passengers = [
     status: 'COMPLETED',
     paymentMethod: 'CASH',
     imageUrl: '/static/images/leo.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee543724f1184914907',
@@ -65,6 +67,8 @@ export const passengers = [
     status: 'MISSED',
     paymentMethod: 'CASH',
     imageUrl: '/static/images/full-face-1.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee54ec4f96a85fa3dbc',
@@ -72,6 +76,8 @@ export const passengers = [
     status: 'CANCELLED',
     paymentMethod: 'credit',
     imageUrl: 'static/images/full-face-2.png',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee5ad0a247f264dd75f',
@@ -79,6 +85,8 @@ export const passengers = [
     status: 'COMPLETED',
     paymentMethod: 'CASH',
     imageUrl: 'static/images/full-face-2.png',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee5ecfd4d136af665ba',
@@ -86,6 +94,8 @@ export const passengers = [
     status: 'CANCELLED',
     paymentMethod: 'CASH',
     imageUrl: '/static/images/leo.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '432756654ec4f96a85fa3dbc',
   },
   {
     id: '5d865ee5b3da2fb19e62a897',
@@ -93,6 +103,8 @@ export const passengers = [
     status: 'COMPLETED',
     paymentMethod: 'CASH',
     imageUrl: '/static/images/full-face-1.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '432756654ec4f96a85fa3dbc',
   },
   {
     id: '5d865ee525b0567a26b1c2f3',
@@ -100,6 +112,8 @@ export const passengers = [
     status: 'COMPLETED',
     paymentMethod: 'CASH',
     imageUrl: '/static/images/leo.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '432756654ec4f96a85fa3dbc',
   },
   {
     id: '5d865ee5f18d6587c1cb9ed0',
@@ -107,6 +121,8 @@ export const passengers = [
     status: 'CANCELLED',
     paymentMethod: 'CREDIT',
     imageUrl: '/static/images/leo.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee527d6024df9300d92',
@@ -114,6 +130,8 @@ export const passengers = [
     status: 'MISSED',
     paymentMethod: 'CREDIT',
     imageUrl: 'static/images/full-face-2.png',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee51049173f6c386500',
@@ -121,6 +139,8 @@ export const passengers = [
     status: 'MISSED',
     paymentMethod: 'CREDIT',
     imageUrl: '/static/images/leo.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d87566598u4f96a85fa3dbc',
   },
   {
     id: '5d865ee5d0d97ea49d4e5124',
@@ -128,6 +148,8 @@ export const passengers = [
     status: 'COMPLETED',
     paymentMethod: 'CREDIT',
     imageUrl: '/static/images/full-face-1.jpg',
+    pickupStationId: '5d865ee507bfe196bac94ff3',
+    checkoutStationId: '5d8734554ec4f96a85fa3dbc',
   },
   // {
   //   id: '5d865ee580c33a45ed14c2ed',
@@ -135,6 +157,8 @@ export const passengers = [
   //   status: 'CANCELLED',
   //   paymentMethod: 'CREDIT',
   //   imageUrl: '/static/images/full-face-1.jpg',
+  //   pickupStationId: '5d865ee507bfe196bac94ff3',
+  //   checkoutStationId: '5d87566598u4f96a85fa3dbc'
   // },
 ];
 

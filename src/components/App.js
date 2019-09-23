@@ -6,7 +6,8 @@ import {
   MainMapContainer,
   TripInfoContainer,
   BookingsContainer,
-} from '../containers';
+} from './containers';
+import TripStatistics from './stats/TripStatistics';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -57,6 +58,13 @@ export default function App() {
         className={classes.mainContainer}
       >
         <BookingsContainer />
+      </Container>
+      <Container
+        maxWidth='lg'
+        component='main'
+        className={classes.mainContainer}
+      >
+        <TripStatistics />
       </Container>
     </>
   );

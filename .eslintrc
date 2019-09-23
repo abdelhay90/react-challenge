@@ -19,6 +19,7 @@
     "no-return-await": "warn",
     "no-debugger": "warn",
     "react/no-unused-state": "warn",
+    "import/no-extraneous-dependencies": "warn"
   },
   "globals": {
     "window": true,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import TripInfo from '../components/trip-info/TripInfo';
+import TripInfo from '../trip-info/TripInfo';
 
 const TripInfoContainer = inject('trip')(
   observer(({ trip }) => {

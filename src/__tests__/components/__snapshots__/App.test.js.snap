@@ -1,0 +1,2638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main App Loading should match snapshot 1`] = `
+Array [
+  <header
+    className="MuiPaper-root MuiPaper-elevation0 MuiAppBar-root MuiAppBar-positionFixed makeStyles-appBar-331 MuiAppBar-colorDefault mui-fixed"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-332 MuiToolbar-gutters"
+    >
+      <img
+        alt="logo"
+        height="36"
+        src="/static/images/swvl-new-logo.png"
+        width="90"
+      />
+    </div>
+  </header>,
+  <main
+    className="MuiContainer-root makeStyles-mainContainer-329 makeStyles-mapContainer-330 MuiContainer-maxWidthLg"
+  >
+    <div>
+      <div
+        className="MuiBox-root MuiBox-root-383"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary Mui-disabled Mui-disabled"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Start Trip
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-404"
+      >
+        <div
+          style={
+            Object {
+              "cursor": "grab",
+              "height": 400,
+              "position": "relative",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "position": "relative",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className=""
+              style={
+                Object {
+                  "height": "100%",
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "visibility": "inherit",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "overflow": "visible",
+                  "width": 0,
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>,
+  <main
+    className="MuiContainer-root makeStyles-mainContainer-329 MuiContainer-maxWidthLg"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-406"
+    >
+      <h5
+        className="MuiTypography-root MuiTypography-h5"
+      >
+        Trip Info
+      </h5>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-437"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-438 makeStyles-tripInfoBox-405"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-442"
+        >
+          <div
+            className="MuiBox-root MuiBox-root-443"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-439 makeStyles-car-441"
+              >
+                <img
+                  alt=" TOYOTA HiAce 2019"
+                  className="MuiAvatar-img"
+                  src="/static/images/Toyota-HiAce.jpg"
+                />
+              </div>
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-439 makeStyles-driver-440"
+              >
+                <img
+                  alt="Ahmed Abdelhay"
+                  className="MuiAvatar-img"
+                  src="/static/images/driver-1.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-550"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+            >
+              Ahmed Abdelhay
+            </h6>
+             TOYOTA HiAce 2019 - QA 2378
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-551 makeStyles-tripInfoBox-405"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-553 makeStyles-gradientBorder-552"
+        >
+          <h6
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Talaat Harb Axis
+          </h6>
+          <h6
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            ElThawra St.
+          </h6>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-554 makeStyles-tripInfoBox-405"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-555"
+        >
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <defs>
+                <path
+                  d="M0 0h24v24H0V0z"
+                  id="a"
+                />
+              </defs>
+              <path
+                d="M19.5 9.5c-1.03 0-1.9.62-2.29 1.5h-2.92c-.39-.88-1.26-1.5-2.29-1.5s-1.9.62-2.29 1.5H6.79c-.39-.88-1.26-1.5-2.29-1.5C3.12 9.5 2 10.62 2 12s1.12 2.5 2.5 2.5c1.03 0 1.9-.62 2.29-1.5h2.92c.39.88 1.26 1.5 2.29 1.5s1.9-.62 2.29-1.5h2.92c.39.88 1.26 1.5 2.29 1.5 1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5z"
+              />
+            </svg>
+             
+            <span>
+              Trip Distance 47 KM
+            </span>
+          </h6>
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+              />
+            </svg>
+             
+            <span>
+              Trip Base Fare $25
+            </span>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </main>,
+  <main
+    className="MuiContainer-root makeStyles-mainContainer-329 MuiContainer-maxWidthLg"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-565"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-566"
+      >
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
+          Bookings
+        </h5>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-567"
+      >
+        <button
+          aria-describedby={null}
+          aria-label="Add Passenger"
+          className="MuiButtonBase-root MuiFab-root MuiFab-sizeSmall MuiFab-primary"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="Add Passenger"
+          type="button"
+        >
+          <span
+            className="MuiFab-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-601"
+    >
+      <div
+        className="MuiCollapse-container"
+        style={
+          Object {
+            "minHeight": "300px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-607"
+            >
+              <div
+                className="MuiBox-root MuiBox-root-610 makeStyles-passenger-608"
+                id="5d865ee507bfe196bac94ff3"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-611"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Bailey Walls"
+                      className="MuiAvatar-img"
+                      src="/static/images/leo.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-612"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Bailey Walls
+                  </h6>
+                  COMPLETED - CASH
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-613 makeStyles-passenger-608"
+                id="5d865ee543724f1184914907"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-614"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Angie Rice"
+                      className="MuiAvatar-img"
+                      src="/static/images/full-face-1.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-615"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Angie Rice
+                  </h6>
+                  MISSED - CASH
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-616 makeStyles-passenger-608"
+                id="5d865ee54ec4f96a85fa3dbc"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-617"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Cecilia Trevino"
+                      className="MuiAvatar-img"
+                      src="static/images/full-face-2.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-618"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Cecilia Trevino
+                  </h6>
+                  CANCELLED - credit
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-619 makeStyles-passenger-608"
+                id="5d865ee5ad0a247f264dd75f"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-620"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Coffey Fleming"
+                      className="MuiAvatar-img"
+                      src="static/images/full-face-2.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-621"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Coffey Fleming
+                  </h6>
+                  COMPLETED - CASH
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-622 makeStyles-passenger-608"
+                id="5d865ee5ecfd4d136af665ba"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-623"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Stuart Orr"
+                      className="MuiAvatar-img"
+                      src="/static/images/leo.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-624"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Stuart Orr
+                  </h6>
+                  CANCELLED - CASH
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-625 makeStyles-passenger-608"
+                id="5d865ee5b3da2fb19e62a897"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-626"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Vickie Beard"
+                      className="MuiAvatar-img"
+                      src="/static/images/full-face-1.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-627"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Vickie Beard
+                  </h6>
+                  COMPLETED - CASH
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-628 makeStyles-passenger-608"
+                id="5d865ee525b0567a26b1c2f3"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-629"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Sandra Blackburn"
+                      className="MuiAvatar-img"
+                      src="/static/images/leo.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-630"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Sandra Blackburn
+                  </h6>
+                  COMPLETED - CASH
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-631 makeStyles-passenger-608"
+                id="5d865ee5f18d6587c1cb9ed0"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-632"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Tia Oneal"
+                      className="MuiAvatar-img"
+                      src="/static/images/leo.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-633"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Tia Oneal
+                  </h6>
+                  CANCELLED - CREDIT
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-634 makeStyles-passenger-608"
+                id="5d865ee527d6024df9300d92"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-635"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Marylou Carr"
+                      className="MuiAvatar-img"
+                      src="static/images/full-face-2.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-636"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Marylou Carr
+                  </h6>
+                  MISSED - CREDIT
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-637 makeStyles-passenger-608"
+                id="5d865ee51049173f6c386500"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-638"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Rowe Rocha"
+                      className="MuiAvatar-img"
+                      src="/static/images/leo.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-639"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Rowe Rocha
+                  </h6>
+                  MISSED - CREDIT
+                </div>
+              </div>
+              <div
+                className="MuiBox-root MuiBox-root-640 makeStyles-passenger-608"
+                id="5d865ee5d0d97ea49d4e5124"
+              >
+                <div
+                  className="MuiBox-root MuiBox-root-641"
+                >
+                  <div
+                    className="MuiAvatar-root makeStyles-bigAvatar-609"
+                  >
+                    <img
+                      alt="Mcconnell Jefferson"
+                      className="MuiAvatar-img"
+                      src="/static/images/full-face-1.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiBox-root MuiBox-root-642"
+                  xs={6}
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    Mcconnell Jefferson
+                  </h6>
+                  COMPLETED - CREDIT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "50%",
+          }
+        }
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          View More
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </main>,
+  <main
+    className="MuiContainer-root makeStyles-mainContainer-329 MuiContainer-maxWidthLg"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-643"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-644"
+      >
+        <div>
+          <div
+            className="rv-xy-plot "
+            style={
+              Object {
+                "height": "300px",
+                "width": "300px",
+              }
+            }
+          >
+            <svg
+              className="rv-xy-plot__inner"
+              height={300}
+              onClick={[Function]}
+              onDoubleClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              onMouseUp={[Function]}
+              onTouchCancel={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onWheel={[Function]}
+              width={300}
+            >
+              <g
+                className="rv-xy-plot__grid-lines undefined"
+                transform="translate(40,10)"
+              >
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={25}
+                  x2={25}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={75}
+                  x2={75}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={125}
+                  x2={125}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={175}
+                  x2={175}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={225}
+                  x2={225}
+                  y1={0}
+                  y2={220}
+                />
+              </g>
+              <g
+                className="rv-xy-plot__grid-lines undefined"
+                transform="translate(40,10)"
+              >
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={220}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={176}
+                  y2={176}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={132}
+                  y2={132}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={88}
+                  y2={88}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={44}
+                  y2={44}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={0}
+                  y2={0}
+                />
+              </g>
+              <g
+                className="rv-xy-plot__axis rv-xy-plot__axis--horizontal "
+                style={Object {}}
+                transform="translate(40,230)"
+              >
+                <line
+                  className="rv-xy-plot__axis__line"
+                  style={Object {}}
+                  x1={0}
+                  x2={250}
+                  y1={0}
+                  y2={0}
+                />
+                <g
+                  className="rv-xy-plot__axis__ticks"
+                  transform="translate(0, 0)"
+                >
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(25, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-45)"
+                    >
+                      WAITING
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(75, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-45)"
+                    >
+                      CHECKED_IN
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(125, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-45)"
+                    >
+                      MISSED
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(175, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-45)"
+                    >
+                      CANCELLED
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(225, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-45)"
+                    >
+                      COMPLETED
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                className="rv-xy-plot__axis rv-xy-plot__axis--vertical "
+                style={Object {}}
+                transform="translate(0,10)"
+              >
+                <line
+                  className="rv-xy-plot__axis__line"
+                  style={Object {}}
+                  x1={40}
+                  x2={40}
+                  y1={0}
+                  y2={220}
+                />
+                <g
+                  className="rv-xy-plot__axis__ticks"
+                  transform="translate(40, 0)"
+                >
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 220)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      0
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 176)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      1
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 132)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      2
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 88)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      3
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 44)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      4
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      5
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                className="rv-xy-plot__series rv-xy-plot__series--bar "
+                transform="translate(40,10)"
+              >
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={42.5}
+                  x={3.75}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={42.5}
+                  x={53.75}
+                  y={220}
+                />
+                <rect
+                  height={132}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={42.5}
+                  x={103.75}
+                  y={88}
+                />
+                <rect
+                  height={132}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={42.5}
+                  x={153.75}
+                  y={88}
+                />
+                <rect
+                  height={220}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={42.5}
+                  x={203.75}
+                  y={0}
+                />
+              </g>
+            </svg>
+          </div>
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            Passengers Statistics
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-645"
+      >
+        <div>
+          <div
+            className="rv-xy-plot "
+            style={
+              Object {
+                "height": "300px",
+                "width": "300px",
+              }
+            }
+          >
+            <svg
+              className="rv-xy-plot__inner"
+              height={300}
+              onClick={[Function]}
+              onDoubleClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              onMouseUp={[Function]}
+              onTouchCancel={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onWheel={[Function]}
+              width={300}
+            >
+              <g
+                className="rv-xy-plot__grid-lines undefined"
+                transform="translate(40,10)"
+              >
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={12.5}
+                  x2={12.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={37.5}
+                  x2={37.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={62.5}
+                  x2={62.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={87.5}
+                  x2={87.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={112.5}
+                  x2={112.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={137.5}
+                  x2={137.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={162.5}
+                  x2={162.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={187.5}
+                  x2={187.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={212.5}
+                  x2={212.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={237.5}
+                  x2={237.5}
+                  y1={0}
+                  y2={220}
+                />
+              </g>
+              <g
+                className="rv-xy-plot__grid-lines undefined"
+                transform="translate(40,10)"
+              >
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={220}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={176}
+                  y2={176}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={132}
+                  y2={132}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={88}
+                  y2={88}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={44}
+                  y2={44}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={0}
+                  y2={0}
+                />
+              </g>
+              <g
+                className="rv-xy-plot__axis rv-xy-plot__axis--horizontal "
+                style={Object {}}
+                transform="translate(40,230)"
+              >
+                <line
+                  className="rv-xy-plot__axis__line"
+                  style={Object {}}
+                  x1={0}
+                  x2={250}
+                  y1={0}
+                  y2={0}
+                />
+                <g
+                  className="rv-xy-plot__axis__ticks"
+                  transform="translate(0, 0)"
+                >
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(12.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Talaat Harb Axis
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(37.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Omar Ibn Abdelaziz
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(62.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Southern Teseen
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(87.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      AlMoshir Tantawy Axis
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(112.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      El-Shaikh Kamel Khedr
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(137.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Ahmed ElZomor
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(162.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Mostafa ElNahas
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(187.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Makram Ebid
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(212.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Makrem Ebeid Ext
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(237.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      ElThawra St.
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                className="rv-xy-plot__axis rv-xy-plot__axis--vertical "
+                style={Object {}}
+                transform="translate(0,10)"
+              >
+                <line
+                  className="rv-xy-plot__axis__line"
+                  style={Object {}}
+                  x1={40}
+                  x2={40}
+                  y1={0}
+                  y2={220}
+                />
+                <g
+                  className="rv-xy-plot__axis__ticks"
+                  transform="translate(40, 0)"
+                >
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 220)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      0
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 176)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      1
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 132)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      2
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 88)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      3
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 44)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      4
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      5
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                className="rv-xy-plot__series rv-xy-plot__series--bar "
+                transform="translate(40,10)"
+              >
+                <rect
+                  height={220}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={1.875}
+                  y={0}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={26.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={51.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={76.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={101.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={126.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={151.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={176.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={201.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={226.875}
+                  y={220}
+                />
+              </g>
+            </svg>
+          </div>
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            Picked Up Passengers Per Station Statistics
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-646"
+      >
+        <div>
+          <div
+            className="rv-xy-plot "
+            style={
+              Object {
+                "height": "300px",
+                "width": "300px",
+              }
+            }
+          >
+            <svg
+              className="rv-xy-plot__inner"
+              height={300}
+              onClick={[Function]}
+              onDoubleClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseMove={[Function]}
+              onMouseUp={[Function]}
+              onTouchCancel={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onWheel={[Function]}
+              width={300}
+            >
+              <g
+                className="rv-xy-plot__grid-lines undefined"
+                transform="translate(40,10)"
+              >
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={12.5}
+                  x2={12.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={37.5}
+                  x2={37.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={62.5}
+                  x2={62.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={87.5}
+                  x2={87.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={112.5}
+                  x2={112.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={137.5}
+                  x2={137.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={162.5}
+                  x2={162.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={187.5}
+                  x2={187.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={212.5}
+                  x2={212.5}
+                  y1={0}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={237.5}
+                  x2={237.5}
+                  y1={0}
+                  y2={220}
+                />
+              </g>
+              <g
+                className="rv-xy-plot__grid-lines undefined"
+                transform="translate(40,10)"
+              >
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={220}
+                  y2={220}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={165}
+                  y2={165}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={110}
+                  y2={110}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={55}
+                  y2={55}
+                />
+                <line
+                  className="rv-xy-plot__grid-lines__line"
+                  x1={0}
+                  x2={250}
+                  y1={0}
+                  y2={0}
+                />
+              </g>
+              <g
+                className="rv-xy-plot__axis rv-xy-plot__axis--horizontal "
+                style={Object {}}
+                transform="translate(40,230)"
+              >
+                <line
+                  className="rv-xy-plot__axis__line"
+                  style={Object {}}
+                  x1={0}
+                  x2={250}
+                  y1={0}
+                  y2={0}
+                />
+                <g
+                  className="rv-xy-plot__axis__ticks"
+                  transform="translate(0, 0)"
+                >
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(12.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Talaat Harb Axis
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(37.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Omar Ibn Abdelaziz
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(62.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Southern Teseen
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(87.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      AlMoshir Tantawy Axis
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(112.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      El-Shaikh Kamel Khedr
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(137.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Ahmed ElZomor
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(162.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Mostafa ElNahas
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(187.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Makram Ebid
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(212.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      Makrem Ebeid Ext
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(237.5, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={0}
+                      x2={0}
+                      y1={-6}
+                      y2={6}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(0, 14) rotate(-60)"
+                    >
+                      ElThawra St.
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                className="rv-xy-plot__axis rv-xy-plot__axis--vertical "
+                style={Object {}}
+                transform="translate(0,10)"
+              >
+                <line
+                  className="rv-xy-plot__axis__line"
+                  style={Object {}}
+                  x1={40}
+                  x2={40}
+                  y1={0}
+                  y2={220}
+                />
+                <g
+                  className="rv-xy-plot__axis__ticks"
+                  transform="translate(40, 0)"
+                >
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 220)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      0.0
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 165)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      0.5
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 110)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      1.0
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 55)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      1.5
+                    </text>
+                  </g>
+                  <g
+                    className="rv-xy-plot__axis__tick"
+                    style={Object {}}
+                    transform="translate(0, 0)"
+                  >
+                    <line
+                      className="rv-xy-plot__axis__tick__line"
+                      style={Object {}}
+                      x1={6}
+                      x2={-6}
+                      y1={0}
+                      y2={0}
+                    />
+                    <text
+                      className="rv-xy-plot__axis__tick__text"
+                      dy="0.32em"
+                      style={Object {}}
+                      textAnchor="end"
+                      transform="translate(-14, 0)"
+                    >
+                      2.0
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                className="rv-xy-plot__series rv-xy-plot__series--bar "
+                transform="translate(40,10)"
+              >
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={1.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={26.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={51.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={76.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={101.875}
+                  y={220}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={126.875}
+                  y={220}
+                />
+                <rect
+                  height={220}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={151.875}
+                  y={0}
+                />
+                <rect
+                  height={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={176.875}
+                  y={220}
+                />
+                <rect
+                  height={110}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={201.875}
+                  y={110}
+                />
+                <rect
+                  height={220}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  style={
+                    Object {
+                      "fill": "#12939A",
+                      "opacity": 1,
+                      "stroke": "#12939A",
+                    }
+                  }
+                  width={21.25}
+                  x={226.875}
+                  y={0}
+                />
+              </g>
+            </svg>
+          </div>
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            Checked out Passengers Per Station Statistics
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>,
+]
+`;
