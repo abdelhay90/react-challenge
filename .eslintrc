@@ -40,7 +40,7 @@
       "env": {
         "jest": true
       },
-      "plugins": ["jest"],
+      "plugins": ["jest", "cypress"],
       "rules": {
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
