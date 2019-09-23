@@ -34,7 +34,7 @@ export default class Trip {
     tripStatus = TRIP_STATUS.NOT_STARTED,
   }) {
     this.id = id;
-    this.passengers = passengers.map(item => new Passenger({ ...item }, this));
+    this.passengers = passengers.map(item => new Passenger({ ...item }));
     this.distance = distance;
     this.rateFare = rateFare;
     this.driverInfo = driverInfo;
@@ -43,6 +43,10 @@ export default class Trip {
     this.tripStatus = tripStatus;
   }
 
+  /**
+   * computed property returns the route object that help in binding to screen
+   * @returns {{endPoint: string, route: *, routeStops: *, name: (string|number), startPoint: string, currentStop: *}}
+   */
   @computed
   get route() {
     return {
@@ -58,11 +62,19 @@ export default class Trip {
     };
   }
 
+  /**
+   * computed property checks if car of current trip has reached max capacity
+   * @returns {boolean}
+   */
   @computed
   get isTripMaxCapacity() {
     return this.passengers.length >= PASSENGERS_MAX_CAPACITY;
   }
 
+  /**
+   * computed property returns the passengers status statistics during trip
+   * @returns {{x: *, y: *}[]}
+   */
   @computed
   get passengersStats() {
     let allGroups = Object.keys(PASSENGER_STATUS).reduce(
@@ -77,14 +89,24 @@ export default class Trip {
     }));
   }
 
-  getStationMap() {
+  /**
+   * helper function that create the station map that can hold statistics of passengers per each station
+   * @returns {*}
+   */
+  _getStationMap() {
     return this.path.reduce(
       (accum, value) => ({ ...accum, [value.stationId]: [] }),
       {},
     );
   }
 
-  combineStationStats(allStations, calculated) {
+  /**
+   * combine the all map of station with filled with zero and the new station map statistics
+   * @param allStations
+   * @param calculated
+   * @returns {{x: *, y: *}[]}
+   */
+  _combineStationStats(allStations, calculated) {
     const newStatsMap = { ...allStations, ...calculated };
     return Object.keys(newStatsMap).map(key => ({
       x: this.path.filter(item => item.stationId === key)[0].stationName,
@@ -92,44 +114,66 @@ export default class Trip {
     }));
   }
 
+  /**
+   * computed property return the statistics of picked up passengers per each station
+   * @returns {{x: *, y: *}[]}
+   */
   @computed
   get stationPickupStats() {
-    const allStations = this.getStationMap();
+    const allStations = this._getStationMap();
     const passengers = this.passengers.filter(
       passenger =>
         passenger.status !== PASSENGER_STATUS.MISSED &&
         passenger.status !== PASSENGER_STATUS.CANCELLED,
     );
     const stationGroups = groupBy(passengers, 'pickupStationId');
-    return this.combineStationStats(allStations, stationGroups);
+    return this._combineStationStats(allStations, stationGroups);
   }
 
+  /**
+   * computed property return the statistics of checked out passengers per each station
+   * @returns {{x: *, y: *}[]}
+   */
   @computed
   get stationCheckoutStats() {
-    const allStations = this.getStationMap();
+    const allStations = this._getStationMap();
     const passengers = this.passengers.filter(
       passenger => passenger.status === PASSENGER_STATUS.COMPLETED,
     );
     const stationGroups = groupBy(passengers, 'checkoutStationId');
-    return this.combineStationStats(allStations, stationGroups);
+    return this._combineStationStats(allStations, stationGroups);
   }
 
+  /**
+   * action to add new passenger to passengers list
+   * @param passenger
+   */
   @action.bound
   addPassenger(passenger) {
     if (this.passengers.length < 12)
-      this.passengers.push(new Passenger({ ...passenger }, this));
+      this.passengers.push(new Passenger({ ...passenger }));
   }
 
+  /**
+   * action to remove existing passenger from passengers list
+   * @param item
+   */
   @action.bound
   removePassenger(item) {
     this.passengers = this.passengers.filter(i => i !== item);
   }
 
+  /**
+   * action to set start trip status
+   */
   @action.bound
   startTrip() {
     this.tripStatus = TRIP_STATUS.STARTED;
   }
 
+  /**
+   * action to set stop trip status
+   */
   @action.bound
   stopTrip() {
     this.tripStatus = TRIP_STATUS.FINISHED;

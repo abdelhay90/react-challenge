@@ -1,3 +1,6 @@
+/**
+ * holds the trip expected distance and base fare
+ */
 import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import LinearScale from '@material-ui/icons/LinearScale';

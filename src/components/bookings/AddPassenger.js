@@ -1,3 +1,6 @@
+/**
+ * Add Passenger component that hold the trigger for opening Passenger Form dialog
+ */
 import React, { useState } from 'react';
 import { inject } from 'mobx-react';
 import {

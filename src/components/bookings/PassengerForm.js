@@ -1,3 +1,6 @@
+/**
+ * hold the form used to add new passenger to the current trip
+ */
 import React from 'react';
 import { inject } from 'mobx-react';
 import {

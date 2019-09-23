@@ -1,3 +1,6 @@
+/**
+ * Station Pickup/Checkout statistics chart
+ */
 import React from 'react';
 import {
   XYPlot,

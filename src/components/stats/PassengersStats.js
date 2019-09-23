@@ -1,3 +1,6 @@
+/**
+ * Passenger status statistics chart
+ */
 import React from 'react';
 import {
   XYPlot,

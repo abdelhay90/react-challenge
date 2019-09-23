@@ -1,3 +1,6 @@
+/**
+ * container to trip info feature and assign the trip store to it
+ */
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 import TripInfo from '../trip-info/TripInfo';

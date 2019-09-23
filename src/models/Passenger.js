@@ -37,11 +37,19 @@ export default class Passenger {
     this.checkoutStationId = checkoutStationId;
   }
 
+  /**
+   * action to update passenger status
+   * @param newStatus
+   */
   @action.bound
   updateStatus(newStatus) {
     this.status = newStatus;
   }
 
+  /**
+   * action to update the payment method that the current passenger will use
+   * @param newPaymentMethod
+   */
   @action.bound
   updatePaymentMethod(newPaymentMethod) {
     this.paymentMethod = newPaymentMethod;

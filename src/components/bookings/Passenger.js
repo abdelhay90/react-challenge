@@ -1,3 +1,6 @@
+/**
+ * Passenger card that hold the passenger identity, status, and payment method
+ */
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import { Avatar, makeStyles, Typography } from '@material-ui/core';

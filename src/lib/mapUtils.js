@@ -6,6 +6,11 @@ import {
   GEOMETRY_POINT_TYPE,
 } from './constants';
 
+/**
+ * fit map view port to contain and zoom to specific shape
+ * @param map
+ * @param shape
+ */
 export const fitBounds = (map, shape) => {
   const startBounds = new mapboxgl.LngLatBounds();
   startBounds.extend(shape[0]);
@@ -19,6 +24,13 @@ export const fitBounds = (map, shape) => {
   });
 };
 
+/**
+ * create a map feature and mutate new object that can be used in maps and feature collection
+ * @param item
+ * @param geometryType
+ * @param coordinates
+ * @returns {{geometry: {coordinates: *, type: *}, type: *, properties}}
+ */
 export const createFeature = (
   item,
   geometryType = GEOMETRY_POINT_TYPE,
@@ -34,6 +46,12 @@ export const createFeature = (
   };
 };
 
+/**
+ * create feature collection from array of data
+ * @param items
+ * @param geometryType
+ * @returns {{features: *, type: *}}
+ */
 export const createFeatureCollection = (items, geometryType) => {
   return {
     type: FEATURE_COLLECTION_TYPE,
@@ -43,6 +61,13 @@ export const createFeatureCollection = (items, geometryType) => {
   };
 };
 
+/**
+ * calculate an arc that make marker movement on map smooth
+ * @param lineCoords
+ * @param distanceOptions
+ * @param steps
+ * @returns {[]}
+ */
 export const calculateSmoothRouteArc = (
   lineCoords,
   { distanceOptions, steps },
@@ -58,6 +83,12 @@ export const calculateSmoothRouteArc = (
   return arc;
 };
 
+/**
+ * adding new Geo JSON layer to the associated map
+ * @param map
+ * @param sourceOptions
+ * @param layerOptions
+ */
 export const addGeoJSONLayer = ({ map, sourceOptions, layerOptions }) => {
   map.addSource(sourceOptions.name, {
     type: 'geojson',

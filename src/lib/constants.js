@@ -1,5 +1,8 @@
-export const MAP_TOKEN =
-  'pk.eyJ1IjoiYWhtZWQtYWJkZWxoYXkiLCJhIjoiY2swb2lkeGcyMGE1dDNlcnV3bzYyeXBqYSJ9.n0kF9SCChITXNQispwGnYQ';
+/**
+ * holds all constants will be used in application during runtime
+ */
+
+export const MAP_TOKEN = process.env.REACT_APP_MAP_TOKEN_API;
 export const FEATURE_COLLECTION_TYPE = 'FeatureCollection';
 export const FEATURE_TYPE = 'Feature';
 export const GEOMETRY_POINT_TYPE = 'Point';

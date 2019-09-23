@@ -1,3 +1,6 @@
+/**
+ * holds all booking component features and manage bindings of them
+ */
 import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import AddPassenger from './AddPassenger';

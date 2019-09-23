@@ -1,3 +1,6 @@
+/**
+ * holds the map and its features as main feature component
+ */
 import React, { Component } from 'react';
 import ReactMapGL from 'react-map-gl';
 import { Box } from '@material-ui/core';

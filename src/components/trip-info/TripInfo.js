@@ -1,3 +1,6 @@
+/**
+ * holds all the trip information feature components
+ */
 import React from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
 import DriverInfo from './DriverInfo';

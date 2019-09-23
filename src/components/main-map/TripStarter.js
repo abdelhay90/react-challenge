@@ -1,3 +1,6 @@
+/**
+ * it is a trip starter and simulator for marker movement on map
+ */
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
 import {

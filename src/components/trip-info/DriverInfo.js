@@ -1,3 +1,6 @@
+/**
+ * holds the driver identity and car model
+ */
 import React from 'react';
 import { Grid, Avatar, Typography, makeStyles } from '@material-ui/core';
 import Box from '@material-ui/core/Box';

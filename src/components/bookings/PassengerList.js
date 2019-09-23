@@ -1,3 +1,6 @@
+/**
+ * list of all passenger in the trip with collapsible capability
+ */
 import React, { useState } from 'react';
 import { Box, Button, Collapse } from '@material-ui/core';
 import Passenger from './Passenger';

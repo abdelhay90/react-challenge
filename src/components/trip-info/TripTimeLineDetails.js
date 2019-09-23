@@ -1,3 +1,6 @@
+/**
+ * holds the trip route start and end stations
+ */
 import React from 'react';
 import { makeStyles, Typography, Box } from '@material-ui/core';
 
