@@ -13,6 +13,10 @@ class AppTripSimulator extends EventEmitter {
     this.init();
   }
 
+  /**
+   * init to observe the changes happened in the driver current location then calculate the
+   * interpolated line between two point to make it easier while apply animation  on map
+   */
   init() {
     observe(this.trip.driverInfo, change => {
       // to observe and detect changes to drivers location simulate smooth movement on map
@@ -29,8 +33,12 @@ class AppTripSimulator extends EventEmitter {
     });
   }
 
+  /**
+   * simulating driver push its location and setting current location
+   */
   startSimulation() {
     const path = [...this.trip.path].reverse();
+    // remove first location because it was bound when creating the trip path
     path.pop();
 
     const intervalId = setInterval(() => {
