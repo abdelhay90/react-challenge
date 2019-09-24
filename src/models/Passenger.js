@@ -15,6 +15,8 @@ export default class Passenger {
 
   checkoutStationId;
 
+  chargedFees;
+
   @observable status;
 
   constructor({
@@ -26,6 +28,7 @@ export default class Passenger {
     imageUrl = '',
     pickupStationId,
     checkoutStationId,
+    chargedFees = 0,
   }) {
     this.id = id;
     this.name = name;
@@ -35,6 +38,7 @@ export default class Passenger {
     this.mobileNumber = mobileNumber;
     this.pickupStationId = pickupStationId;
     this.checkoutStationId = checkoutStationId;
+    this.chargedFees = chargedFees;
   }
 
   /**

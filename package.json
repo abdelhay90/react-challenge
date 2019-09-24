@@ -137,8 +137,18 @@
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!src/**/*.d.ts",
+      "!src/serviceWorker.js",
+      "!src/index.js",
+      "!src/**/index.js",
+      "!src/**/mapUtils.js",
+      "!src/**/theme.js"
     ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 60
+      }
+    },
     "setupFiles": [
       "react-app-polyfill/jsdom",
       "./stubs/jest.stubs.js"

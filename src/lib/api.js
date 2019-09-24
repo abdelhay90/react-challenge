@@ -9,7 +9,7 @@ window.localforage = localforage;
  */
 const getAllTrips = async () => {
   const items = await localforage.getItem('trips');
-  if (!items) await localforage.setItem('trips', [trip]);
+  if (items === null) await localforage.setItem('trips', [trip]);
   return items || [];
 };
 
@@ -19,7 +19,7 @@ const getAllTrips = async () => {
  */
 const getAllPassengers = async () => {
   const items = await localforage.getItem('passengers');
-  if (!items) await localforage.setItem('passengers', [...passengers]);
+  if (items === null) await localforage.setItem('passengers', [...passengers]);
   return items || [];
 };
 
@@ -78,5 +78,17 @@ export default {
   async getAllPassengers() {
     const newPassengers = await getAllPassengers();
     return newPassengers;
+  },
+
+  /**
+   * add new passengers to existing passengers list on cache
+   * @param item
+   * @returns {Promise<{id: *}>}
+   */
+  async addPassenger(item) {
+    const items = await getAllPassengers();
+    const newItem = { ...item, id: Date.now() };
+    await localforage.setItem('passengers', [...items, newItem]);
+    return newItem;
   },
 };

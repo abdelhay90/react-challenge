@@ -7,6 +7,9 @@ import Passenger from './Passenger';
 
 const PassengersList = ({ passengers }) => {
   const [collapsed, setCollapsed] = useState(false);
+  const toggle = () => {
+    setCollapsed(prev => !prev);
+  };
   return (
     <>
       <Collapse in={collapsed} collapsedHeight='300px'>
@@ -28,9 +31,7 @@ const PassengersList = ({ passengers }) => {
         size='small'
         color='primary'
         style={{ left: '50%' }}
-        onClick={() => {
-          setCollapsed(prev => !prev);
-        }}
+        onClick={toggle}
       >
         {!collapsed ? 'View More' : 'View Less'}
       </Button>

@@ -4,7 +4,6 @@
 import React, { Component } from 'react';
 import ReactMapGL from 'react-map-gl';
 import { Box } from '@material-ui/core';
-import { stops } from '../../lib/mock';
 import {
   addGeoJSONLayer,
   createFeatureCollection,
@@ -30,24 +29,37 @@ export default class MainMap extends Component {
       viewport: {
         width: '100%',
         height: 400,
-        latitude: 37.7577,
-        longitude: -122.4376,
+        bearing: 0,
+        pitch: 0,
         zoom: 8,
+        scrollZoom: true,
       },
     };
   }
 
   mapLoaded = map => {
-    const route = createFeatureCollection(
-      [{ name: 'route1', coordinates: stops.map(item => item.coordinates) }],
+    map.scrollZoom.enable();
+    map.boxZoom.enable();
+    map.dragPan.enable();
+    const { route } = this.props;
+    const routeCollection = createFeatureCollection(
+      [
+        {
+          name: 'route1',
+          coordinates: route.routeStops.map(item => item.coordinates),
+        },
+      ],
       'LineString',
     );
-    const routeStops = createFeatureCollection(stops, 'Point');
-    const busCollection = createFeatureCollection([stops[0]], 'Point');
+    const routeStops = createFeatureCollection(route.routeStops, 'Point');
+    const busCollection = createFeatureCollection(
+      [route.routeStops[0]],
+      'Point',
+    );
 
     addGeoJSONLayer({
       map,
-      sourceOptions: { name: 'route', data: route },
+      sourceOptions: { name: 'route', data: routeCollection },
       layerOptions: {
         id: 'route',
         source: 'route',
@@ -82,26 +94,26 @@ export default class MainMap extends Component {
   };
 
   render() {
-    const line = stops.map(item => item.coordinates);
+    const { route } = this.props;
+    const line = route.routeStops.map(item => item.coordinates);
     const { mapLoaded, viewport, map } = this.state;
     return (
-      <div>
-        <Box mb={1}>
-          <TripStarter disabled={!mapLoaded} map={map} stops={stops} />
-        </Box>
-        <Box my={1}>
+      <>
+        <TripStarter disabled={!mapLoaded} map={map} stops={route.routeStops} />
+        <Box m={1} p={1}>
           <ReactMapGL
             mapboxApiAccessToken={MAP_TOKEN}
+            mapStyle='mapbox://styles/mapbox/dark-v9'
             {...viewport}
-            onViewportChange={this.onViewportChange}
             onLoad={e => {
               this.setState({ map: e.target, mapLoaded: true });
+              e.target._interactive = true;
               this.mapLoaded(e.target);
               fitBounds(e.target, line);
             }}
           />
         </Box>
-      </div>
+      </>
     );
   }
 }

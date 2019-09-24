@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Passenger List Component should match snapshot 1`] = `
+Array [
+  <div
+    className="MuiCollapse-container"
+    style={
+      Object {
+        "minHeight": "300px",
+      }
+    }
+  >
+    <div
+      className="MuiCollapse-wrapper"
+    >
+      <div
+        className="MuiCollapse-wrapperInner"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-102"
+        >
+          <div
+            className="MuiBox-root MuiBox-root-105 makeStyles-passenger-103"
+            id="5d865ee507bfe196bac94ff3"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-106"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Bailey Walls"
+                  className="MuiAvatar-img"
+                  src="/static/images/leo.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-110"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Bailey Walls
+              </h6>
+              COMPLETED - CASH
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-141 makeStyles-passenger-103"
+            id="5d865ee543724f1184914907"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-142"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Angie Rice"
+                  className="MuiAvatar-img"
+                  src="/static/images/full-face-1.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-143"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Angie Rice
+              </h6>
+              MISSED - CASH
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-144 makeStyles-passenger-103"
+            id="5d865ee54ec4f96a85fa3dbc"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-145"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Cecilia Trevino"
+                  className="MuiAvatar-img"
+                  src="static/images/full-face-2.png"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-146"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Cecilia Trevino
+              </h6>
+              CANCELLED - credit
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-147 makeStyles-passenger-103"
+            id="5d865ee5ad0a247f264dd75f"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-148"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Coffey Fleming"
+                  className="MuiAvatar-img"
+                  src="static/images/full-face-2.png"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-149"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Coffey Fleming
+              </h6>
+              COMPLETED - CASH
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-150 makeStyles-passenger-103"
+            id="5d865ee5ecfd4d136af665ba"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-151"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Stuart Orr"
+                  className="MuiAvatar-img"
+                  src="/static/images/leo.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-152"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Stuart Orr
+              </h6>
+              CANCELLED - CASH
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-153 makeStyles-passenger-103"
+            id="5d865ee5b3da2fb19e62a897"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-154"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Vickie Beard"
+                  className="MuiAvatar-img"
+                  src="/static/images/full-face-1.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-155"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Vickie Beard
+              </h6>
+              COMPLETED - CASH
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-156 makeStyles-passenger-103"
+            id="5d865ee525b0567a26b1c2f3"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-157"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Sandra Blackburn"
+                  className="MuiAvatar-img"
+                  src="/static/images/leo.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-158"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Sandra Blackburn
+              </h6>
+              COMPLETED - CASH
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-159 makeStyles-passenger-103"
+            id="5d865ee5f18d6587c1cb9ed0"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-160"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Tia Oneal"
+                  className="MuiAvatar-img"
+                  src="/static/images/leo.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-161"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Tia Oneal
+              </h6>
+              CANCELLED - CREDIT
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-162 makeStyles-passenger-103"
+            id="5d865ee527d6024df9300d92"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-163"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Marylou Carr"
+                  className="MuiAvatar-img"
+                  src="static/images/full-face-2.png"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-164"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Marylou Carr
+              </h6>
+              MISSED - CREDIT
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-165 makeStyles-passenger-103"
+            id="5d865ee51049173f6c386500"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-166"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Rowe Rocha"
+                  className="MuiAvatar-img"
+                  src="/static/images/leo.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-167"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Rowe Rocha
+              </h6>
+              MISSED - CREDIT
+            </div>
+          </div>
+          <div
+            className="MuiBox-root MuiBox-root-168 makeStyles-passenger-103"
+            id="5d865ee5d0d97ea49d4e5124"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-169"
+            >
+              <div
+                className="MuiAvatar-root makeStyles-bigAvatar-104"
+              >
+                <img
+                  alt="Mcconnell Jefferson"
+                  className="MuiAvatar-img"
+                  src="/static/images/full-face-1.jpg"
+                />
+              </div>
+            </div>
+            <div
+              className="MuiBox-root MuiBox-root-170"
+              xs={6}
+            >
+              <h6
+                className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                Mcconnell Jefferson
+              </h6>
+              COMPLETED - CREDIT
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "left": "50%",
+      }
+    }
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      View More
+    </span>
+  </button>,
+]
+`;

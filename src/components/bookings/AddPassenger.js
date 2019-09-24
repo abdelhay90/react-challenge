@@ -19,10 +19,10 @@ const AddPassenger = inject('trip')(({ trip }) => {
   const [open, setOpen] = useState(false);
   const [addLabel, setAddLabel] = useState('Add Passenger');
   const toggleOpen = () => {
-    setOpen(!open);
     if (trip.isTripMaxCapacity) {
       setAddLabel('Max Capacity');
     }
+    setOpen(!open);
   };
   const disableClickAndEsc = true;
   return (

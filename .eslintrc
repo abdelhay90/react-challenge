@@ -19,7 +19,9 @@
     "no-return-await": "warn",
     "no-debugger": "warn",
     "react/no-unused-state": "warn",
-    "import/no-extraneous-dependencies": "warn"
+    "import/no-extraneous-dependencies": "warn",
+    "react/jsx-boolean-value": "warn",
+    "no-unused-vars": "warn"
   },
   "globals": {
     "window": true,

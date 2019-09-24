@@ -62,6 +62,14 @@ export default class Trip {
     };
   }
 
+  @computed
+  get stationsMap() {
+    return this.path.reduce(
+      (accum, value) => ({ ...accum, [value.stationId]: value }),
+      {},
+    );
+  }
+
   /**
    * computed property checks if car of current trip has reached max capacity
    * @returns {boolean}

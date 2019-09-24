@@ -49,4 +49,29 @@ describe('Add Passenger Component', () => {
       .simulate('click');
     expect(wrapper.find('.MuiDialog-root')).toHaveLength(2);
   });
+
+  it('should not open dialog', () => {
+    const currentTrip = new Trip({ ...trip });
+    currentTrip.addPassenger({
+      id: '5d865ee580c33a45ed14c2ed',
+      name: 'Cook Best',
+      status: 'CANCELLED',
+      paymentMethod: 'CREDIT',
+      imageUrl: '/static/images/full-face-1.jpg',
+      pickupStationId: '5d865ee507bfe196bac94ff3',
+      checkoutStationId: '5d87566598u4f96a85fa3dbc',
+    });
+    const wrapper = mount(
+      <Provider trip={currentTrip}>
+        <AddPassenger />
+      </Provider>,
+    );
+    const evt = new window.Event('input', { bubbles: true });
+    evt.simulated = true;
+    wrapper
+      .find('button')
+      .last()
+      .simulate('click', evt);
+    expect(wrapper.find('.MuiDialog-root')).toHaveLength(1);
+  });
 });
