@@ -24,11 +24,12 @@ export const DEFAULT_LAYER_LINE_PAINT = {
 };
 
 export const DEFAULT_LAYER_SYMBOL_BUS_PAINT = {
-  'icon-image': 'airport-15',
+  'icon-image': 'pin-bus',
   'icon-rotate': ['get', 'bearing'],
   'icon-rotation-alignment': 'map',
   'icon-allow-overlap': true,
   'icon-ignore-placement': true,
+  'icon-size': 1,
 };
 
 // 30.1 seconds, the .1 is to allow a buffer for the next set of cords to load

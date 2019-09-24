@@ -19,6 +19,7 @@ import {
   MAP_TOKEN,
 } from '../../lib/constants';
 import TripStarter from './TripStarter';
+import BusMarker from './bus.png';
 
 export default class MainMap extends Component {
   constructor(props) {
@@ -37,10 +38,12 @@ export default class MainMap extends Component {
     };
   }
 
-  mapLoaded = map => {
+  mapLoaded = async map => {
     map.scrollZoom.enable();
     map.boxZoom.enable();
     map.dragPan.enable();
+
+    // map.addImage('pin-bus', pin)
     const { route } = this.props;
     const routeCollection = createFeatureCollection(
       [
@@ -52,44 +55,51 @@ export default class MainMap extends Component {
       'LineString',
     );
     const routeStops = createFeatureCollection(route.routeStops, 'Point');
+
     const busCollection = createFeatureCollection(
       [route.routeStops[0]],
       'Point',
     );
 
-    addGeoJSONLayer({
-      map,
-      sourceOptions: { name: 'route', data: routeCollection },
-      layerOptions: {
-        id: 'route',
-        source: 'route',
-        type: LAYER_LINE_TYPE,
-        layout: { visibility: 'visible' },
-        paint: DEFAULT_LAYER_LINE_PAINT,
-      },
-    });
+    map.loadImage(BusMarker, (error, image) => {
+      image.width = 25;
+      image.height = 25;
+      map.addImage('pin-bus', image);
 
-    addGeoJSONLayer({
-      map,
-      sourceOptions: { name: 'stops', data: routeStops },
-      layerOptions: {
-        id: 'stops',
-        source: 'stops',
-        type: LAYER_CIRCLE_TYPE,
-        layout: { visibility: 'visible' },
-        paint: DEFAULT_LAYER_CIRCLE_PAINT,
-      },
-    });
+      addGeoJSONLayer({
+        map,
+        sourceOptions: { name: 'route', data: routeCollection },
+        layerOptions: {
+          id: 'route',
+          source: 'route',
+          type: LAYER_LINE_TYPE,
+          layout: { visibility: 'visible' },
+          paint: DEFAULT_LAYER_LINE_PAINT,
+        },
+      });
 
-    addGeoJSONLayer({
-      map,
-      sourceOptions: { name: 'bus', data: busCollection },
-      layerOptions: {
-        id: 'bus',
-        source: 'bus',
-        type: LAYER_SYMBOL_TYPE,
-        layout: DEFAULT_LAYER_SYMBOL_BUS_PAINT,
-      },
+      addGeoJSONLayer({
+        map,
+        sourceOptions: { name: 'stops', data: routeStops },
+        layerOptions: {
+          id: 'stops',
+          source: 'stops',
+          type: LAYER_CIRCLE_TYPE,
+          layout: { visibility: 'visible' },
+          paint: DEFAULT_LAYER_CIRCLE_PAINT,
+        },
+      });
+
+      addGeoJSONLayer({
+        map,
+        sourceOptions: { name: 'bus', data: busCollection },
+        layerOptions: {
+          id: 'bus',
+          source: 'bus',
+          type: LAYER_SYMBOL_TYPE,
+          layout: DEFAULT_LAYER_SYMBOL_BUS_PAINT,
+        },
+      });
     });
   };
 
