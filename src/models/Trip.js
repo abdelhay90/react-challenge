@@ -6,6 +6,7 @@ import {
   PASSENGERS_MAX_CAPACITY,
   TRIP_STATUS,
 } from '../lib/constants';
+import Driver from './Driver';
 
 export default class Trip {
   id;
@@ -17,6 +18,8 @@ export default class Trip {
   @observable driverInfo;
 
   @observable path;
+
+  @observable actualPath;
 
   @observable passengers = [];
 
@@ -32,15 +35,20 @@ export default class Trip {
     driverInfo,
     path,
     tripStatus = TRIP_STATUS.NOT_STARTED,
+    actualPath = [],
   }) {
     this.id = id;
     this.passengers = passengers.map(item => new Passenger({ ...item }));
     this.distance = distance;
     this.rateFare = rateFare;
-    this.driverInfo = driverInfo;
     this.path = path;
+    this.driverInfo = new Driver({
+      ...driverInfo,
+      currentLocation: this.path[0].coordinates,
+    });
     this.currentStop = this.path.length > 0 ? this.path[0] : null;
     this.tripStatus = tripStatus;
+    this.actualPath = actualPath;
   }
 
   /**
@@ -177,6 +185,8 @@ export default class Trip {
   @action.bound
   startTrip() {
     this.tripStatus = TRIP_STATUS.STARTED;
+    this.driverInfo.currentLocation = [...this.path[0].coordinates];
+    this.actualPath.push([...this.path[0].coordinates]);
   }
 
   /**

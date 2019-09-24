@@ -62,7 +62,9 @@ export default class MainMap extends Component {
     );
 
     map.loadImage(BusMarker, (error, image) => {
+      // eslint-disable-next-line no-param-reassign
       image.width = 25;
+      // eslint-disable-next-line no-param-reassign
       image.height = 25;
       map.addImage('pin-bus', image);
 
@@ -104,12 +106,17 @@ export default class MainMap extends Component {
   };
 
   render() {
-    const { route } = this.props;
+    const { route, trip } = this.props;
     const line = route.routeStops.map(item => item.coordinates);
     const { mapLoaded, viewport, map } = this.state;
     return (
       <>
-        <TripStarter disabled={!mapLoaded} map={map} stops={route.routeStops} />
+        <TripStarter
+          disabled={!mapLoaded}
+          map={map}
+          stops={route.routeStops}
+          trip={trip}
+        />
         <Box m={1} p={1}>
           <ReactMapGL
             mapboxApiAccessToken={MAP_TOKEN}

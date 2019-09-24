@@ -3,63 +3,53 @@
  */
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
-import {
-  calculateSmoothRouteArc,
-  createFeature,
-  createFeatureCollection,
-} from '../../lib/mapUtils';
-import { ANIMATION_STEPS, GEOMETRY_POINT_TYPE } from '../../lib/constants';
+import { createFeatureCollection } from '../../lib/mapUtils';
+import { ANIMATION_STEPS } from '../../lib/constants';
+import AppTripSimulator from '../../lib/AppTripSimulator';
 
 let frameId = null;
-function TripStarter({ disabled, stops, map }) {
+
+function TripStarter({ trip, disabled, stops, map }) {
   const [started, setStarted] = useState(false);
+  const simulator = new AppTripSimulator(trip);
 
   const startTrip = () => {
     if (frameId) {
       window.cancelAnimationFrame(frameId);
       frameId = null;
       setStarted(false);
+      simulator.off('location-change');
       return;
     }
     setStarted(true);
 
-    const locations = stops.map(item =>
-      createFeature(item, GEOMETRY_POINT_TYPE, item.coordinates),
-    );
-    if (!locations.length) {
-      // exit if no coords in array
-      return;
-    }
-
     // eslint-disable-next-line no-unused-vars
     let currentLocation = null;
-    let arc = null;
+    let arc = [];
     let startTime = 0;
-
-    arc = calculateSmoothRouteArc(
-      locations.map(loc => loc.geometry.coordinates),
-      {
-        distanceOptions: { units: 'feet' },
-        steps: ANIMATION_STEPS,
-      },
-    );
+    simulator.on('location-change', newArc => {
+      arc = [...arc, ...newArc];
+    });
 
     function animate(timestamp) {
       // animate function to set location
       const runtime = timestamp - startTime;
       const timeStep = Math.round(runtime);
-      currentLocation = arc[timeStep] || arc[arc.length - 1];
-      const collection = createFeatureCollection(
-        [{ coordinates: currentLocation }],
-        'Point',
-      );
-      map.getSource('bus').setData(collection);
-      if (timeStep <= ANIMATION_STEPS) {
+      if (arc.length > 0) {
+        currentLocation = arc[timeStep] || arc[arc.length - 1];
+        const collection = createFeatureCollection(
+          [{ coordinates: currentLocation }],
+          'Point',
+        );
+        map.getSource('bus').setData(collection);
+      }
+      if (timeStep <= ANIMATION_STEPS * stops.length) {
         frameId = window.requestAnimationFrame(animate);
       }
     }
 
     window.cancelAnimationFrame(frameId);
+    simulator.startSimulation();
     frameId = window.requestAnimationFrame(timeStamp => {
       startTime = timeStamp;
       animate(timeStamp);

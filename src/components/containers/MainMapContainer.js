@@ -7,7 +7,7 @@ import MainMap from '../main-map/MainMap';
 
 const MainMapContainer = inject('trip')(
   observer(({ trip }) => {
-    return <MainMap route={trip.route} />;
+    return <MainMap route={trip.route} trip={trip} />;
   }),
 );
 
